@@ -15,6 +15,12 @@
   Add a VisuallyHidden component with each icon so that screen readers know what they do (and can read them out)
 - Naming components: DesktopNav (instead of Nav), MobileActions (instead of MobileNav - because it's not technically a navigation link which takes you to another page)
 
+### Responsive Shoe Grid
+
+- Have 2 copies of Breadcrumbs, and reuse the code by creating a component ShoeBreadcrumbs which simply returns Breadcrumb, so that we can reuse it and also solves the problem that we want different styles on these 2 copies
+
+- Examine my work against Figma file closely: can take screenshots and lower transparency, and compare to see if anything not aligned perfectly
+
 ---
 
 In the Flexbox module, we built an e-commerce store:

@@ -21,16 +21,12 @@ const App = () => {
 const Main = styled.main`
   padding: 64px 32px;
 
-  @media ${QUERIES.laptopAndSmaller} {
-    background-color: blueviolet;
-  }
-
   @media ${QUERIES.tabletAndSmaller} {
-    background-color: gold;
+    padding: 48px 32px;
   }
 
   @media ${QUERIES.phoneAndSmaller} {
-    background-color: royalblue;
+    padding: 48px 16px;
   }
 
 `;
