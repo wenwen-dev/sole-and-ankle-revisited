@@ -1,5 +1,22 @@
 # Sole&Ankle, Revisited — Module 5 workshop
 
+## My reflections
+
+### Setting up breakpoints
+
+- Combine a BREAKPOINTS (constant) object and a QUERIES object to make syntax simple when being used - `@media QUERIES.phoneAndSmaller {...}`
+- Instead of using rem directly, `${tabletAndSmaller / 16}rem` might be better, because 600px is easier to grasp intuitively than 37.5rem
+- The order of different media queries matter - order by screen size from large to small (so we don't end up having the same styles of the largest size's query)
+
+### Mobile Header
+
+- Accessibility:
+  Wrap an UnstyledButton outside the Icon so that screen readers can tab and select them;
+  Add a VisuallyHidden component with each icon so that screen readers know what they do (and can read them out)
+- Naming components: DesktopNav (instead of Nav), MobileActions (instead of MobileNav - because it's not technically a navigation link which takes you to another page)
+
+---
+
 In the Flexbox module, we built an e-commerce store:
 
 ![A screenshot of the original Flexbox module workshop](./docs/original-desktop.png)
