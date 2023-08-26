@@ -25,33 +25,27 @@ const Header = () => {
           <Logo />
         </LogoWrapper>
         <DesktopNav>
-          <NavLink href="/sale">Sale</NavLink>
-          <NavLink href="/new">New&nbsp;Releases</NavLink>
-          <NavLink href="/men">Men</NavLink>
-          <NavLink href="/women">Women</NavLink>
-          <NavLink href="/kids">Kids</NavLink>
-          <NavLink href="/collections">Collections</NavLink>
+          <NavLink href='/sale'>Sale</NavLink>
+          <NavLink href='/new'>New&nbsp;Releases</NavLink>
+          <NavLink href='/men'>Men</NavLink>
+          <NavLink href='/women'>Women</NavLink>
+          <NavLink href='/kids'>Kids</NavLink>
+          <NavLink href='/collections'>Collections</NavLink>
         </DesktopNav>
 
         <MobileActions>
-           <UnstyledButton>
-             <Icon id='shopping-bag' />
-             <VisuallyHidden>
-              Open cart
-             </VisuallyHidden>
-           </UnstyledButton>
-           <UnstyledButton>
-             <Icon id='search'/>
-             <VisuallyHidden>
-              Search
-             </VisuallyHidden>
-           </UnstyledButton>
-           <UnstyledButton onClick={setShowMobileMenu}>
-             <Icon id='menu'/>
-             <VisuallyHidden>
-              Open menu
-             </VisuallyHidden>
-           </UnstyledButton>
+          <UnstyledButton>
+            <Icon id='shopping-bag' />
+            <VisuallyHidden>Open cart</VisuallyHidden>
+          </UnstyledButton>
+          <UnstyledButton>
+            <Icon id='search' />
+            <VisuallyHidden>Search</VisuallyHidden>
+          </UnstyledButton>
+          <UnstyledButton onClick={setShowMobileMenu}>
+            <Icon id='menu' />
+            <VisuallyHidden>Open menu</VisuallyHidden>
+          </UnstyledButton>
         </MobileActions>
 
         <Filler />
@@ -82,10 +76,7 @@ const MainHeader = styled.div`
     padding-left: 16px;
     padding-right: 16px;
   }
-
 `;
-
-
 
 const DesktopNav = styled.nav`
   display: flex;
@@ -112,7 +103,6 @@ const Filler = styled.div`
     display: none;
   }
 `;
-
 
 const NavLink = styled.a`
   font-size: 1.125rem;

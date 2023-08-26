@@ -21,6 +21,18 @@
 
 - Examine my work against Figma file closely: can take screenshots and lower transparency, and compare to see if anything not aligned perfectly
 
+### Mobile Menu Dialog
+
+- How to set the size of a fixed positioned element? Set all four insets top/bottom/right/left all to be 0
+
+- Recurring design feature to center a Nav with equal space above and below: set up and below to be flex: 1 (and insert a Filler if needed)
+
+- Using Composition: create a CloseButton component which composes the UnstyledButton, so that I can style it (and position it absolutely) - can also do so in the UnstyledButton component but it's not a universal style we'd want to apply in all future situations
+
+- Better UX:
+  - give the close button some padding so that when the space near it was tapped it still would work (on mobile devices)
+  - place the hamburger menu and the dialog's close button at the same location (same distance to top and right) so the user can tap the same place to open to see and then close it
+
 ---
 
 In the Flexbox module, we built an e-commerce store:
