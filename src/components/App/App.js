@@ -27,7 +27,6 @@ const Main = styled.main`
 
   @media ${QUERIES.phoneAndSmaller} {
     padding: 48px 16px;
-    background-color: aliceblue;
   }
 
 `;
