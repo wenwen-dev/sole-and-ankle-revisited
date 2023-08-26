@@ -46,7 +46,7 @@ const Header = () => {
               Search
              </VisuallyHidden>
            </UnstyledButton>
-           <UnstyledButton>
+           <UnstyledButton onClick={setShowMobileMenu}>
              <Icon id='menu'/>
              <VisuallyHidden>
               Open menu
