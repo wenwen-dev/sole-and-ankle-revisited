@@ -10,8 +10,8 @@ const SearchInput = ({ label, ...delegated }) => {
   return (
     <Label>
       <VisuallyHidden>Search</VisuallyHidden>
-      <Input {...delegated} placeholder="Search…" />
-      <SearchIcon id="search" strokeWidth={1} size={16} />
+      <Input {...delegated} placeholder='Search…' />
+      <SearchIcon id='search' strokeWidth={1} size={16} />
     </Label>
   );
 };
@@ -26,11 +26,11 @@ const Input = styled.input`
   border-bottom: 1px solid ${COLORS.gray[300]};
   padding-left: 24px;
   font-size: 0.875rem;
-  color: ${COLORS.gray[100]};
+  color: var(--color-gray-100);
   outline-offset: 4px;
 
   &::placeholder {
-    color: ${COLORS.gray[500]};
+    color: var(--color-gray-500);
   }
 `;
 

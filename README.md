@@ -36,7 +36,12 @@
 ### Fluid Desktop Nav
 
 - Produced awkward look when adding overflow on the Header wrapper - the reason is that it involved Superheader which need additional tweaking in this scenario - better way is apply it on Mainheader so only the Navlinks will overflow (to the edge of the page, which btw would not work as smoothly if applied only on Nav because it would create a box (of Nav) and only overflows inside)
-- Creating a fluid desktop nav: to provide potential to take edits, e.g. adding a new nav link, and still look good, we can set the gaps between nav links dynamically: finding the ideal min gap (by experimenting with a narrow window with) and the ideal max gap (by experimenting with a wide window width), and then setting fluid in between values by using the fluid calculator (with window size range, speed of change, and the min and max values set.
+- Creating a fluid desktop nav: to provide potential to take edits, e.g. adding a new nav link, and still look good, we can set the gaps between nav links dynamically: finding the ideal min gap (by experimenting with a narrow window with) and the ideal max gap (by experimenting with a wide window width), and then setting fluid in between values by using the fluid calculator (with window size range, speed of change, and the min and max values set).
+
+### Make constants into CSS variables
+
+- It's interesting that all design key values, e.g. shades of color, are stored in a constant.js file, and THEN used in the GlobalStyles component. My understanding is the benefit of keeping a copy of all key values, e.g. of colors, weights, font sizes, all at one place, instead of scattered in the CSS file?
+- By tweaking the syntax of CSS color variables, i.e. extracting 'hsl()' out of the constants, we can manipulate the separate values inside and add the opacity value and make it into a new CSS variable - brilliant! This allows for scalability, flexibility (possible change in the future), and avoid having hard coded (color) values somewhere in the ocean of code.
 
 ---
 
