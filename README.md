@@ -33,6 +33,11 @@
   - give the close button some padding so that when the space near it was tapped it still would work (on mobile devices)
   - place the hamburger menu and the dialog's close button at the same location (same distance to top and right) so the user can tap the same place to open to see and then close it
 
+### Fluid Desktop Nav
+
+- Produced awkward look when adding overflow on the Header wrapper - the reason is that it involved Superheader which need additional tweaking in this scenario - better way is apply it on Mainheader so only the Navlinks will overflow (to the edge of the page, which btw would not work as smoothly if applied only on Nav because it would create a box (of Nav) and only overflows inside)
+- Creating a fluid desktop nav: to provide potential to take edits, e.g. adding a new nav link, and still look good, we can set the gaps between nav links dynamically: finding the ideal min gap (by experimenting with a narrow window with) and the ideal max gap (by experimenting with a wide window width), and then setting fluid in between values by using the fluid calculator (with window size range, speed of change, and the min and max values set.
+
 ---
 
 In the Flexbox module, we built an e-commerce store:

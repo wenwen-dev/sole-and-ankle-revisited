@@ -18,7 +18,7 @@ const Header = () => {
   // <button onClick={() => setShowMobileMenu(true)}>
 
   return (
-    <header>
+    <Wrapper>
       <SuperHeader />
       <MainHeader>
         <LogoWrapper>
@@ -55,16 +55,18 @@ const Header = () => {
         isOpen={showMobileMenu}
         onDismiss={() => setShowMobileMenu(false)}
       />
-    </header>
+    </Wrapper>
   );
 };
+
+const Wrapper = styled.div``;
 
 const MainHeader = styled.div`
   display: flex;
   align-items: baseline;
   padding: 18px 32px;
-  height: 72px;
   border-bottom: 1px solid ${COLORS.gray[300]};
+  overflow: auto;
 
   @media ${QUERIES.tabletAndSmaller} {
     border-top: 4px solid ${COLORS.gray[900]};
@@ -80,7 +82,7 @@ const MainHeader = styled.div`
 
 const DesktopNav = styled.nav`
   display: flex;
-  gap: 48px;
+  gap: clamp(1rem, 9.1vw - 4.5rem, 3.5rem);
   margin: 0px 48px;
 
   @media (${QUERIES.tabletAndSmaller}) {
